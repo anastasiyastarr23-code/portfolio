@@ -242,12 +242,14 @@
     .project:hover .project-num,
     .project:hover .project-name,
     .project:hover .project-desc-inline,
-    .project:hover .ptag { color: var(--white); background: none; }
+    .project:hover .ptag,
+    .project:hover .proj-arrow { color: var(--white); background: none; }
     .project-wrap.open .project { background: var(--pink); color: var(--white); }
     .project-wrap.open .project .project-num,
     .project-wrap.open .project .project-name,
     .project-wrap.open .project .project-desc-inline,
-    .project-wrap.open .project .ptag { color: var(--white); background: none; }
+    .project-wrap.open .project .ptag,
+    .project-wrap.open .project .proj-arrow { color: var(--white); background: none; }
     .project-wrap.open .proj-arrow { color: var(--pink); transform: rotate(90deg); }
     .project-num {
       padding: 40px 20px 40px 56px;
@@ -281,7 +283,7 @@
       font-size: 2.8rem; font-weight: 900; line-height: 1;
     }
     .project-wrap.open .proj-arrow { transform: rotate(90deg); }
-    .project:hover .proj-arrow { color: var(--pink); }
+    .project:hover .proj-arrow { color: var(--white); }
     .project { touch-action: manipulation; grid-template-columns: 64px 1fr 110px; }
 
     /* accordion panel */

@@ -239,7 +239,15 @@
       padding: 0;
     }
     .project:hover { background: var(--pink); color: var(--white); }
+    .project:hover .project-num,
+    .project:hover .project-name,
+    .project:hover .project-desc-inline,
+    .project:hover .ptag { color: var(--white); background: rgba(255,255,255,.15); }
     .project-wrap.open .project { background: var(--pink); color: var(--white); }
+    .project-wrap.open .project .project-num,
+    .project-wrap.open .project .project-name,
+    .project-wrap.open .project .project-desc-inline,
+    .project-wrap.open .project .ptag { color: var(--white); background: rgba(255,255,255,.15); }
     .project-wrap.open .proj-arrow { color: var(--pink); transform: rotate(90deg); }
     .project-num {
       padding: 40px 20px 40px 56px;
@@ -332,6 +340,8 @@
     .service:nth-child(2), .service:nth-child(4) { border-right: none; }
     .service:nth-child(3), .service:nth-child(4) { border-bottom: none; }
     .service:hover { background: var(--pink); color: var(--white); }
+    .service:hover .service-name,
+    .service:hover .service-desc { color: var(--white); }
     .service-num {
       width: 48px; height: 5px; background: var(--pink);
       margin-bottom: 28px; border-radius: 2px;
